@@ -58,31 +58,31 @@
                                 <span class="text-gray-400 font-medium flex items-center gap-2">
                                     <i class="fa-solid fa-user text-raid-orange"></i> Piloto 1:
                                 </span>
-                                <span class="font-bold text-white" id="display-piloto1">Carlos Martínez</span>
+                                <span class="font-bold text-white" id="display-piloto1">Jose (latillas)</span>
                             </div>
                             <div class="flex justify-between items-center bg-black/40 p-3 px-4 rounded-xl border border-gray-800 hover:border-gray-700 transition">
                                 <span class="text-gray-400 font-medium flex items-center gap-2">
                                     <i class="fa-solid fa-user-gear text-raid-orange"></i> Copiloto:
                                 </span>
-                                <span class="font-bold text-white" id="display-piloto2">David Gómez</span>
+                                <span class="font-bold text-white" id="display-piloto2">Agustín</span>
                             </div>
                             <div class="flex justify-between items-center bg-black/40 p-3 px-4 rounded-xl border border-gray-800 hover:border-gray-700 transition">
                                 <span class="text-gray-400 font-medium flex items-center gap-2">
                                     <i class="fa-brands fa-instagram text-raid-orange"></i> Instagram:
                                 </span>
-                                <span class="font-bold text-white" id="display-instagram">@focus_chatarras_raid</span>
+                                <a href="https://instagram.com/malas_decisiones_motorsport" target="_blank" rel="noopener noreferrer" class="font-bold text-white hover:text-raid-yellow transition" id="display-instagram">@malas_decisiones_motorsport</a>
                             </div>
                             <div class="flex justify-between items-center bg-black/40 p-3 px-4 rounded-xl border border-gray-800 hover:border-gray-700 transition">
                                 <span class="text-gray-400 font-medium flex items-center gap-2">
                                     <i class="fa-brands fa-tiktok text-raid-orange"></i> TikTok:
                                 </span>
-                                <span class="font-bold text-white" id="display-tiktok">@focus_chatarras_raid</span>
+                                <a href="https://tiktok.com/@malas_decisiones_motorsp" target="_blank" rel="noopener noreferrer" class="font-bold text-white hover:text-raid-yellow transition" id="display-tiktok">@malas_decisiones_motorsp</a>
                             </div>
                             <div class="flex justify-between items-center bg-black/40 p-3 px-4 rounded-xl border border-gray-800 hover:border-gray-700 transition">
                                 <span class="text-gray-400 font-medium flex items-center gap-2">
                                     <i class="fa-solid fa-envelope text-raid-orange"></i> Email:
                                 </span>
-                                <a href="mailto:equipo@chatarrasraid.com" class="font-bold text-raid-yellow hover:underline truncate max-w-[180px]" id="display-email">equipo@chatarrasraid.com</a>
+                                <a href="mailto:latillasteam@gmail.com" class="font-bold text-raid-yellow hover:underline truncate max-w-[200px]" id="display-email">latillasteam@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,6 @@
 
     <!-- JAVASCRIPT INTEGRADO -->
     <script>
-        // Función para mostrar notificaciones flotantes al interactuar
         function showToast(message) {
             const toast = document.getElementById('toast');
             const toastMessage = document.getElementById('toast-message');
@@ -185,22 +184,13 @@
             }, 2500);
         }
 
-        // Permite copiar datos haciendo clic sobre ellos
         document.addEventListener('DOMContentLoaded', () => {
             const emailEl = document.getElementById('display-email');
-            const phoneEl = document.getElementById('display-telefono');
 
             if(emailEl) {
                 emailEl.addEventListener('click', (e) => {
-                    navigator.clipboard.writeText(emailEl.textContent);
+                    navigator.clipboard.writeText('latillasteam@gmail.com');
                     showToast('Correo electrónico copiado');
-                });
-            }
-
-            if(phoneEl) {
-                phoneEl.addEventListener('click', (e) => {
-                    navigator.clipboard.writeText(phoneEl.textContent);
-                    showToast('Teléfono copiado');
                 });
             }
         });
